@@ -6,6 +6,8 @@
 
 **Hollowise** is a Windows-based tool that implements **process hollowing** and **PPID (Parent Process ID) spoofing** techniques. It allows for stealth execution of debuggers and code and network analizers by replacing the memory of a suspended process (e.g. calc.exe) with arbitrary code while masquerading PEB, under a legitimate parent process (explorer.exe).
 
+**Note:** This project provides an opportunity to explore techniques commonly used by malware for educational purposes.
+
 ## Credits
 A special thank you to my dear friend Pillo for his precious advice. 
 I would like to say thank you for the great work by [NATsCodes](https://github.com/NATsCodes/ProcessHollowing), the developer of a well designed process hollowing PoC. I got ispiration from that code to build the process hollowing function inside hollowise.
@@ -27,10 +29,10 @@ This project is intended for **educational and research purposes only**. Misuse 
 hollowise.exe [legit_process.exe] [payload.exe path] [WindowTitle]
 
 legit_process.exe: A legitimate Windows executable (e.g., calc.exe) to be hollowed
-payload.exe: The malware analysis tool to hide
+payload.exe path: The malware analysis tool to hide
 WindowTitle: The new window title for the injected process
 
-e.g. commandline for starting x64dbg 
+e.g. commandline for starting x64dbg with the window text "EatMySocks"
 hollowise.exe  "C:\Windows\system32\calc.exe"  "C:\Program Files\x3264dbg\x64\x64dbg.exe"  EatMySocks
 ```
 
