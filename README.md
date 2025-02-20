@@ -32,7 +32,7 @@ legit_process.exe: A legitimate Windows executable (e.g., calc.exe) to be hollow
 payload.exe path: The malware analysis tool to hide
 WindowTitle: The new window title for the injected process
 
-e.g. commandline for starting x64dbg with the window text "EatMySocks"
+e.g. commandline for starting x64dbg masked as calc.exe with the window text "EatMySocks"
 hollowise.exe  "C:\Windows\system32\calc.exe"  "C:\Program Files\x3264dbg\x64\x64dbg.exe"  EatMySocks
 ```
 
