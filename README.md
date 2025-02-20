@@ -41,4 +41,4 @@ hollowise.exe  "C:\Windows\system32\calc.exe"  "C:\Program Files\x3264dbg\x64\x6
 </div>
 
 📜 License
-This project is licensed under the CC Zero License - see the LICENSE file for details.
+This project is licensed under the CC0-1.0 License - see the LICENSE file for details.
