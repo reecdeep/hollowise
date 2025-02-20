@@ -26,8 +26,13 @@ This project is intended for **educational and research purposes only**. Misuse 
 ```sh
 hollowise.exe [legit_process.exe] [payload.exe path] [WindowTitle]
 
-e.g.
-C:\Users\<user>\Desktop\hollowise.exe  "C:\Windows\system32\calc.exe"  "C:\Program Files\x3264dbg\x64\x64dbg.exe"  EatMySocks
+legit_process.exe: A legitimate Windows executable (e.g., calc.exe) to be hollowed
+payload.exe: The malware analysis tool to hide
+WindowTitle: The new window title for the injected process
+
+e.g. commandline for starting x64dbg 
+hollowise.exe  "C:\Windows\system32\calc.exe"  "C:\Program Files\x3264dbg\x64\x64dbg.exe"  EatMySocks
+```
 
 <div align="center">
   <img src="https://github.com/reecdeep/hollowise/blob/main/hollowise_example.png?raw=true" alt="Segugio" width="1745" />
